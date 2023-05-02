@@ -1,5 +1,7 @@
 package testRunners;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,6 +11,7 @@ import pages.HomePage;
 public class AddRemoveElementsTests extends BaseTest{
     private HomePage homePage;
     private AddRemoveElementsPage addRemoveElementsPage;
+
 
     @BeforeMethod(description = "Method Level Setup!")
     public void methodLevelSetup() {
@@ -21,7 +24,7 @@ public class AddRemoveElementsTests extends BaseTest{
     }
 
     @Test(priority = 1, description="Invalid Login Scenario with wrong username and password.")
-    public void firstTest () {
-        addRemoveElementsPage.firstTest();
+    public void addElementTest () {
+        addRemoveElementsPage.addingElement(extent);
     }
 }
