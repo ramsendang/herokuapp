@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-02T14:28:42 NPT" name="Surefire suite" finished-at="2023-05-02T14:28:57 NPT" duration-ms="14418">
+    <groups>
+    </groups>
+    <test started-at="2023-05-02T14:28:42 NPT" name="Surefire test" finished-at="2023-05-02T14:28:57 NPT" duration-ms="14418">
+      <class name="testRunners.AddRemoveElementsTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:42 NPT" name="setup" description="Suite Level Setup" finished-at="2023-05-02T14:28:42 NPT" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="classLevelSetup()[pri:0, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:42 NPT" name="classLevelSetup" description="Class Level Setup!" finished-at="2023-05-02T14:28:51 NPT" duration-ms="8621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelSetup -->
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:51 NPT" name="methodLevelSetup" description="Method Level Setup!" finished-at="2023-05-02T14:28:56 NPT" duration-ms="4621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method signature="addElementTest()[pri:1, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:56 NPT" name="addElementTest" description="Invalid Login Scenario with wrong username and password." finished-at="2023-05-02T14:28:56 NPT" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addElementTest -->
+        <test-method is-config="true" signature="classLevelTeardown()[pri:0, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:56 NPT" name="classLevelTeardown" description="Class Level Teardown!" finished-at="2023-05-02T14:28:57 NPT" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelTeardown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunners.AddRemoveElementsTests@6ef888f6]" started-at="2023-05-02T14:28:57 NPT" name="tearDown" finished-at="2023-05-02T14:28:58 NPT" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testRunners.AddRemoveElementsTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

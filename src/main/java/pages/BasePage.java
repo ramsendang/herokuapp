@@ -2,6 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class BasePage {
 
@@ -12,6 +15,11 @@ public class BasePage {
 
     public void click(By elementLocation){
         driver.findElement(elementLocation).click();
+    }
+
+    public int getListSize(By elementLocation){
+        List<WebElement> elements = driver.findElements(elementLocation);
+        return elements.size();
     }
 
     public void write(By elementLocation, String text){

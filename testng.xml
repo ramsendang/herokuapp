@@ -6,6 +6,7 @@
             <class name="testRunners.AddRemoveElementsTests">
                 <methods>
                     <include name="addElementTest"/>
+                    <include name="removeElementTest"/>
                 </methods>
             </class>
         </classes>

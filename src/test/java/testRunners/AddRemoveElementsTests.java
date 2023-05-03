@@ -1,8 +1,4 @@
 package testRunners;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.AddRemoveElementsPage;
@@ -26,5 +22,9 @@ public class AddRemoveElementsTests extends BaseTest{
     @Test(priority = 1, description="Invalid Login Scenario with wrong username and password.")
     public void addElementTest () {
         addRemoveElementsPage.addingElement(extent);
+    }
+    @Test(priority = 2, description = "removing element test")
+    public void removeElementTest(){
+        addRemoveElementsPage.removingElement(extent);
     }
 }

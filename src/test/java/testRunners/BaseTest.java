@@ -6,7 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
+import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+import java.util.Properties;
 
 public class BaseTest {
     public WebDriver driver;
@@ -15,8 +19,9 @@ public class BaseTest {
     public ExtentSparkReporter spark;
     @BeforeSuite(description = "Suite Level Setup")
     public void setup(){
+        String dateName = new SimpleDateFormat("yyyMMddhhmmss").format(new Date());
         extent = new ExtentReports();
-        spark = new ExtentSparkReporter("src/main/resources/reports/report.html");
+        spark = new ExtentSparkReporter("src/main/resources/reports/"+dateName+"report.html");
         extent.attachReporter(spark);
     }
     @BeforeClass(description = "Class Level Setup!")
