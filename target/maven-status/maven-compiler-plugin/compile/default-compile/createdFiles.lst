@@ -1,3 +1,4 @@
 pages\BasePage.class
+pages\BasicAuthPage.class
 pages\AddRemoveElementsPage.class
 pages\HomePage.class

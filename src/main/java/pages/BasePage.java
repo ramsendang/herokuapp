@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 public class BasePage {
@@ -28,5 +30,21 @@ public class BasePage {
 
     public String read(By elementLocation){
         return driver.findElement(elementLocation).getText();
+    }
+
+    public void switchToAlert(){
+        driver.switchTo().alert();
+    }
+
+    public boolean isDisplayed(By elementLocation){
+        return driver.findElement(elementLocation).isDisplayed();
+    }
+
+    public WebElement element(By elementLocation){
+        return driver.findElement(elementLocation);
+    }
+
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
     }
 }

@@ -18,7 +18,6 @@ public class HomePage extends LoadableComponent<HomePage> {
     private Properties prop;
     private FileInputStream io;
     private final String configpath = "configuration/config.properties";
-    private final String addRemoveElementUrl = "http://the-internet.herokuapp.com/add_remove_elements/";
 
 
     public HomePage(WebDriver driver){
@@ -29,6 +28,8 @@ public class HomePage extends LoadableComponent<HomePage> {
 
     By ContactUsBtn = By.cssSelector(".contactus");
     By addRemoveElementBtn = By.xpath("//a[text()='Add/Remove Elements']");
+    By BasicAuthBtn = By.xpath("//a[text()='Basic Auth']");
+    By BrokenImageBtn = By.xpath("//a[text()='Broken Images']");
     @Override
     protected void load() {
         readProperties();
@@ -55,5 +56,15 @@ public class HomePage extends LoadableComponent<HomePage> {
     public AddRemoveElementsPage goToAddRemoveElements(){
         base.click(addRemoveElementBtn);
         return new AddRemoveElementsPage(this.driver, this);
+    }
+
+    public BasicAuthPage goToBasicAuth(){
+        base.click(BasicAuthBtn);
+        return new BasicAuthPage(this.driver, this);
+    }
+
+    public BrokenImagePage goToBrokenImage(){
+        base.click(BrokenImageBtn);
+        return new BrokenImagePage(this.driver, this);
     }
 }
