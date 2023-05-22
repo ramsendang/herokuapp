@@ -44,6 +44,10 @@ public class BasePage {
         return driver.findElement(elementLocation);
     }
 
+    public boolean isChecked(By elementLocation){
+        return driver.findElement(elementLocation).isSelected();
+    }
+
     public void acceptAlert(){
         driver.switchTo().alert().accept();
     }

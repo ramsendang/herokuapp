@@ -35,7 +35,7 @@ public class BaseTest {
     }
     @AfterClass (description = "Class Level Teardown!")
     public void classLevelTeardown () {
-//        driver.quit();
+        driver.quit();
     }
     @AfterSuite
     public void tearDown(){

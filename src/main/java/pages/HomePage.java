@@ -30,6 +30,7 @@ public class HomePage extends LoadableComponent<HomePage> {
     By addRemoveElementBtn = By.xpath("//a[text()='Add/Remove Elements']");
     By BasicAuthBtn = By.xpath("//a[text()='Basic Auth']");
     By BrokenImageBtn = By.xpath("//a[text()='Broken Images']");
+    By checkboxBtn = By.xpath("//a[text()='Checkboxes']");
     @Override
     protected void load() {
         readProperties();
@@ -66,5 +67,10 @@ public class HomePage extends LoadableComponent<HomePage> {
     public BrokenImagePage goToBrokenImage(){
         base.click(BrokenImageBtn);
         return new BrokenImagePage(this.driver, this);
+    }
+
+    public CheckBoxPage goToCheckBoxPage(){
+        base.click(checkboxBtn);
+        return new CheckBoxPage(this.driver, this);
     }
 }
